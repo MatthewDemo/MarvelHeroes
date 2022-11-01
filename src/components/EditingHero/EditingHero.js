@@ -1,9 +1,9 @@
-import './AddingHero.css';
+import './EditingHero.css';
 import React from 'react';
 import axios from 'axios';
 
 
-function AddingHero({ closeAddingHero }) {
+function EditingHero({ closeEditingHero }) {
 
     const [nickname, setNickname] = React.useState();
     const [real_name, setRealName] = React.useState();
@@ -39,11 +39,14 @@ function AddingHero({ closeAddingHero }) {
             })
     }
 
+
+    
+
     return (
         <div className="overlay">
             <div className="addingHero">
-                <h1 className='addingHeader'>Add your hero</h1>
-                <img className="closeAddingHeroIcon" src="./images/close.png" alt="close" onClick={closeAddingHero} />
+                <h1 className='addingHeader'>Edit this hero</h1>
+                <img className="closeAddingHeroIcon" src="./images/close.png" alt="close" onClick={closeEditingHero} />
                 <input className='nameInput' placeholder='Name' onInput={(e) => {
                     e.preventDefault();
                     setNickname(e.target.value);
@@ -68,10 +71,10 @@ function AddingHero({ closeAddingHero }) {
                     <p>Add photos of this hero</p>
                     <input type="file" onChange={(e) => handlerOnChange(e.target.files)} multiple />
                 </div>
-                <button className='saveAddingHero' onClick={addHero}>Save</button>
+                <button className='saveAddingHero' onClick={addHero}>Save changes</button>
             </div>
         </div>
     )
 }
 
-export default AddingHero;
+export default EditingHero;

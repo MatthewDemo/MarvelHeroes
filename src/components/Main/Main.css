@@ -1,0 +1,136 @@
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+  }
+  
+  .heroImageOnCard {
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  
+  .card {
+    background: linear-gradient(#a64d79, #073763);
+    border: #2e2d30 1px solid;
+    border-radius: 40px;
+    height: 450px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+  
+  }
+  
+  .card:hover {
+    box-shadow: 30px 35px 44px 4px rgba(0, 0, 0, 0.6);
+    transform: translateY(-15px) translateX(-10px);
+  }
+  
+  .editIcon {
+    height: 35px;
+    width: 35px;
+    margin-left: 15px;
+    margin-top: 10px;
+    opacity: 0.4;
+  }
+  
+  :hover {
+    opacity: 1;
+  }
+  
+  
+  .card p {
+    font-family: Aclonica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    color: rgb(158, 95, 197);
+    text-shadow: rgb(63, 24, 24) -6px 6px 11px;
+  }
+  
+  
+  .addHeroButton {
+    background: linear-gradient(#a64d79, #073763);
+    border-radius: 11px;
+    font: normal bold 26px/1 "Vollkorn", serif;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    cursor: pointer;
+  
+    position: relative;
+    padding: 15px 30px;
+    color: #7fc0f5;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .addHeroButton:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+  }
+  .addHeroButton span {
+    position: absolute;
+    display: block;
+  }
+  span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+  }
+  .addHeroButton:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+  }
+  span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+  }
+  .addHeroButton:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+  }
+  .addHeroButton:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+  }
+  .addHeroButton:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+  }
