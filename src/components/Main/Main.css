@@ -1,60 +1,10 @@
 
 .cards {
     display: flex;
+    gap: 30px;
     flex-direction: row;
     margin-top: 70px;
   }
-  
-  .heroImageOnCard {
-    height: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-  }
-  
-  .card {
-    background: linear-gradient(#a64d79, #073763);
-    border: #2e2d30 1px solid;
-    border-radius: 40px;
-    height: 450px;
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
-  
-  }
-  
-  .card:hover {
-    box-shadow: 30px 35px 44px 4px rgba(0, 0, 0, 0.6);
-    transform: translateY(-15px) translateX(-10px);
-  }
-  
-  .editIcon {
-    height: 35px;
-    width: 35px;
-    margin-left: 15px;
-    margin-top: 10px;
-    opacity: 0.4;
-  }
-  
-  :hover {
-    opacity: 1;
-  }
-  
-  
-  .card p {
-    font-family: Aclonica, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 28px;
-    color: rgb(158, 95, 197);
-    text-shadow: rgb(63, 24, 24) -6px 6px 11px;
-  }
-  
   
   .addHeroButton {
     background: linear-gradient(#a64d79, #073763);

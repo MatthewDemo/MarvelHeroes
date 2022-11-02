@@ -1,0 +1,34 @@
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+
+  .infoContainer {
+    position: relative;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 80%;
+    border-radius: 60px;
+    background: linear-gradient(#a64d79, #073763);
+    border: #828185 3px solid;
+  }
+
+  .closeInfoIcon {
+    position: absolute;
+    height: 25px;
+    left: 90%;
+    bottom: 90%;
+    width: 25px;
+    opacity: 0.4;
+    cursor: pointer;
+  }:hover {
+    opacity: 1;
+  }
+  

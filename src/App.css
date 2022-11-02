@@ -3,7 +3,8 @@
 
 .App {
   background: linear-gradient(to bottom, hsl(300, 8%, 26%) 0%, #ff99ff 100%);
-  height: 1200px;
+  height: 100vh;
+  width: 100vw;
 }
 
 .headermarvel {

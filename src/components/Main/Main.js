@@ -1,18 +1,16 @@
 import './Main.css';
 import HeroCard from '../HeroCard/HeroCard';
-import HeroInfo from '../HeroInfo/HeroInfo';
 
-function Main({ infoOpened, setInfoOpened, setAddingHeroOpened, setEditingHeroOpened, allHeroes }) {
+function Main({ setAddingHeroOpened, allHeroes, setEditingHeroOpened }) {
+    console.log(allHeroes)
     const renderItems = () => {
         return (allHeroes)
-            .map((item, index) => (
-                    <HeroCard
-                        oneHero={item} //??????????????????????????
-                        setInfoOpened={setInfoOpened}
-                        setEditingHeroOpened={setEditingHeroOpened}
-                        key={index}
-                        {...item}
-                    />
+            .map((hero, index) => (
+                <HeroCard
+                    setEditingHeroOpened={setEditingHeroOpened}
+                    oneHero={hero} //??????????????????????????
+                    key={index}
+                />
             ))
     }
 

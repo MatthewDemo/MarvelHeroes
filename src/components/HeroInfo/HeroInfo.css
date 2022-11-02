@@ -2,96 +2,63 @@
 
 
 .heroCloud {
-    position: absolute;
-    height: 500px;
-    width: 500px;
-    transform: scaleX(-1);
-    margin-top: -100px;
-    margin-left: 300px;
-  }
-  
-  .phrase {
-    position: absolute;
-    overflow: hidden;
-    margin-top: 75px;
-    margin-left: 450px;
-    width: 200px;
-    font-weight: 300;
-    font-family: Eater, cursive;
-      font-style: italic;
-      text-align: center;
-      font-size: 22px;
-      color: rgb(6, 12, 12);
-  }
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  transform: scaleX(-1);
+  left: -80px;
+  top: -20px;
 
-  .heroInfo {
-    position:relative;
-    display: grid;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: 750px;
-    border-radius: 60px;
-    background: linear-gradient(#a64d79, #073763);
-    border: #828185 3px solid;
-  }
-  
-  .closeInfoIcon {
-    position: absolute;
-    height: 35px;
-    width: 35px;
-    margin-left: 530px;
-    margin-top: 35px;
-    opacity: 0.4;
-    cursor: pointer;
-  }
-  
-  :hover {
-    opacity: 1;
-  }
+}
 
-  .overlay {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-  }
+.phrase {
+  width: 160px;
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  overflow: hidden;
+  font-weight: 400;
+  font-family: Eater, cursive;
+  font-style: italic;
+  text-align: center;
+  font-size: 22px;
+  color: rgb(6, 12, 12);
+}
 
-  .heroInfoImage{
-    height: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-  } 
+.heroInfoImage {
+  position: absolute;
+  height: 300px;
+  left: 30%;
+  top: 5%;
+}
+.heroInfoImage:hover {
+  transform:scale(1.3)
+}
 
-  .cloudContent {
-    margin-left: -640px;
-    margin-top: -60px;
-    rotate: -15deg;
-  }
+.cloudContent {
+  position: absolute;
+  top: -90px;
+  left: -150px;
+  rotate: -15deg;
+}
 
-  .descriptionText{
-    font-family: Aldrich, sans-serif;
-    text-align: center;
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-    text-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px;
-  }
+.descriptionText {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0px;
+  font-family: Aldrich, sans-serif;
+  text-align: center;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  text-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px;
+}
 
-  .zoom{ 
-    margin-top: 20px;
-  }
+.zoom {
+  height: 100%;
+}
 
-  .zoom:hover img {
-    transform: scale(1.2);
-    transition: transform 0.4s;
-  }
-
-
-
- 
+img {
+  transition: transform 0.3s;
+}

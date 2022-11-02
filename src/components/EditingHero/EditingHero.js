@@ -13,7 +13,6 @@ function EditingHero({ closeEditingHero }) {
     const [images, setImage] = React.useState();
 
 
-
     const handlerOnChange = (files) => {
         const formData = new FormData();
         for (let i = 0; i < files.length; i++) {
@@ -24,14 +23,6 @@ function EditingHero({ closeEditingHero }) {
 
     const addHero = () => {
         axios.post('http://localhost:8001/set-image-for-hero', images,
-            // {
-            //     images, 
-            //     nickname,
-            //     real_name,
-            //     origin_description,
-            //     superpowers,
-            //     catch_phrase
-            // }, 
             {
                 headers: {
                     'Content-Type': 'multipart/form-data'
@@ -39,14 +30,9 @@ function EditingHero({ closeEditingHero }) {
             })
     }
 
-
-    
-
     return (
-        <div className="overlay">
-            <div className="addingHero">
+            <div >
                 <h1 className='addingHeader'>Edit this hero</h1>
-                <img className="closeAddingHeroIcon" src="./images/close.png" alt="close" onClick={closeEditingHero} />
                 <input className='nameInput' placeholder='Name' onInput={(e) => {
                     e.preventDefault();
                     setNickname(e.target.value);
@@ -73,7 +59,6 @@ function EditingHero({ closeEditingHero }) {
                 </div>
                 <button className='saveAddingHero' onClick={addHero}>Save changes</button>
             </div>
-        </div>
     )
 }
 

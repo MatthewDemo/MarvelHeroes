@@ -2,38 +2,22 @@ import './HeroInfo.css';
 import React from 'react';
 
 
-function HeroInfo({ closeInfo, oneHero, allHeroes }) {
+function HeroInfo({ closeInfo, oneHero }) {
 
-    // const renderItems = () => {
-    //     return (allHeroes)
-    //         .map((item, index) => (
-    //                 <HeroInfo
-    //                 oneHero={item}
-    //                 key={index}
-    //                 {...item}
-    //                 />
-    //         ))
-    // }
     return (
-        
-        <div className="overlay">
-            {/* {renderItems()} */}
-            <div className="heroInfo">
-                <div className='cloudContent'>
-                    <img className="heroCloud" src="./images/dialogCloud.png" alt="dialogCloud" />
-                    <div className="borderForText">
-                        <p className="phrase"> When patriots become heroes </p>
-                    </div>
-
+        <div>
+            <div className='cloudContent'>
+                <img className="heroCloud" src="./images/dialogCloud.png" alt="dialogCloud" />
+                <div className="borderForText">
+                    <p className="phrase"> {oneHero.catch_phrase} </p>
                 </div>
-                <div className='zoom'>
-                    <img className="heroInfoImage" src="./images/marvel-captain.png" alt="HeroInfoImage" />
-                </div>
-                <img className="closeInfoIcon" src="./images/close.png" alt="close" onClick={closeInfo} />
-                <p className='descriptionText'>This  rt as known as (nickname). (description). The superpowers are: (superpowers). The catch-phrase is (catch-phrase)</p>
             </div>
+            <div className='zoom'>
+                <img className="heroInfoImage" src={`${oneHero.images}`} alt="HeroInfoImage" />
+            </div>
+            <p className='descriptionText'>This is {oneHero.real_name} as known as {oneHero.nickname}. {oneHero.origin_description}. The superpowers are: {oneHero.superpowers}. The catch-phrase is {oneHero.catch_phrase}</p>
         </div>
-    ) 
+    )
 }
 
 export default HeroInfo;
